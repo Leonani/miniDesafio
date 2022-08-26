@@ -1,0 +1,53 @@
+<app-header></app-header>
+
+  <div class="conteiner">
+    <div class="d-sm-flex justify-content-around lign-items-center">
+      
+      <div class="card" style="width: 18rem;"  *ngFor="let a of ap">
+                <img src="../../../assets/foto.webp" class="card-img-top" alt="Foto Perfil" width="80%" height="auto">
+                <div class="card-body "  >
+                  <h5 class="card-title">{{a.nombre}}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Edad: {{a.edad}}</li>
+                  <li class="list-group-item">Carrera: {{a.carrera}}</li>
+                  <li class="list-group-item">Hobbie: {{a.hobbie}}</li>
+                </ul>
+      </div>
+    
+    </div>
+    
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Carrera</th>
+        <th scope="col">Hobbie</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let a of ap"   >
+      <tr>
+        <th scope="row"></th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+      
+   
+
+<app-footer></app-footer>
